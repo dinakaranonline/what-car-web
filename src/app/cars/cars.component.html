@@ -1,0 +1,29 @@
+<h2 align="center">
+   Top Selling Cars
+</h2>
+
+
+<div class="container table-responsive">
+  <table class="table table-bordered table-hover table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Ranking</th>
+        <th>Car</th>
+        <th>Manufacturer</th>
+        <th>Sales</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let car of cars">
+        <td>{{car.id}}</td>
+        <td> <a routerLink="/detail/{{car.id}}">{{car.name}}</a></td>
+        <td>{{car.manufacturer}}</td>
+        <td>{{car.sales}}</td>
+        <td><button type="button" class="btn btn-danger"
+            (click)="delete(car)">X</button></td>
+    </tr>
+      
+    </tbody>
+  </table>
+</div>

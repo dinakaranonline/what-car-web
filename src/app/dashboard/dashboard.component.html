@@ -1,0 +1,10 @@
+<h3>Top Cars</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let car of cars" class="col-1-4" routerLink="/detail/{{car.id}}">
+    <div class="module car">
+      <h4>{{car.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-car-search></app-car-search>

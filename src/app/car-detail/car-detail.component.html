@@ -1,0 +1,47 @@
+<div *ngIf="car">
+     
+  <!--  <div><span>id</span>{{car.id}}
+      <span>manufacturer</span> {{car.manufacturer}}
+      <span>fuel</span> {{car.fuel}}
+      <span>launch</span> {{car.launch}}
+    </div> 
+    <div>
+      <label>name:
+        <input [(ngModel)]="car.name" placeholder="name"/>
+      </label>
+    </div>
+    <button (click)="save()">save</button>
+     <button (click)="goBack()">Go Back</button> -->
+      <h1 align="center">Details of {{ car.name }}  </h1>
+
+     <div class="container">          
+        <table class="table table-bordered table-striped">
+          <tbody>
+          
+            <tr>
+              <td>Rank</td>
+              <td>{{car.id}}</td>  
+            </tr>
+            <tr>
+              <td>Manufacturer</td>
+              <td>{{car.manufacturer}}</td>
+            </tr>
+            <tr>
+                <td>Fuel</td>
+                <td>{{car.fuel}}</td>
+              </tr>
+              <tr>
+                  <td>Sales</td>
+                  <td>{{car.sales}}</td>
+                </tr>
+                <tr>
+                    <td>Launch</td>
+                    <td>{{car.launch}}</td>
+                  </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-primary" (click)="goBack()">Back</button>
+      </div>
+  </div>
+
+    
